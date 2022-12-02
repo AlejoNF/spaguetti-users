@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
     res.status(200).json({message: 'Ok!'})
 }) 
 
-app.use('/api/v1',userRouter)
+app.use('/api/v1/users',userRouter)
 
-app.listen(() => {
+app.listen( port, () => {
     console.log(`Server started at port ${port}`)
 })
